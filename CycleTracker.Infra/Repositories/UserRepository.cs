@@ -9,11 +9,8 @@ namespace CycleTracker.Infra.Repositories;
 
 public class UserRepository : Repository<User>, IUserRepository
 {
-    protected readonly ApplicationDbContext Context;
-
-    protected UserRepository(ApplicationDbContext context) : base(context)
+    public UserRepository(ApplicationDbContext context) : base(context)
     {
-        Context = context;
     }
 
     public async Task<User?> ObterPorId(int id)

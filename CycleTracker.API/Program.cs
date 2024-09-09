@@ -1,11 +1,13 @@
 using AutoMapper;
 using CycleTracker.Application.Contracts.Services;
 using CycleTracker.Application.Dto.V1.User;
+using CycleTracker.Application.Notifications;
 using CycleTracker.Application.Services;
 using CycleTracker.Domain.Contracts.Repositories;
 using CycleTracker.Domain.Entity;
 using CycleTracker.Infra.Context;
 using CycleTracker.Infra.Repositories;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -26,6 +28,8 @@ builder.Services.AddSingleton(autoMapperConfig.CreateMapper());
 
 // Add Services
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<INotificator, Notificator>();
+builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 
 // Add Repository
 builder.Services.AddScoped<IUserRepository, UserRepository>();

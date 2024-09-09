@@ -13,7 +13,7 @@ public class UserService : BaseService, IUserService
     private readonly IUserRepository _userRepository;
     private readonly IPasswordHasher<User?> _passwordHasher;
     
-    protected UserService(IMapper mapper, INotificator notificator, IUserRepository userRepository, IPasswordHasher<User?> passwordHasher) : base(mapper, notificator)
+    public UserService(IMapper mapper, INotificator notificator, IUserRepository userRepository, IPasswordHasher<User?> passwordHasher) : base(mapper, notificator)
     {
         _userRepository = userRepository;
         _passwordHasher = passwordHasher;
