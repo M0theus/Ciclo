@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4hhhyiKso4PUU0h31liwS7roBZLwAzgwCSLSLcH7T91Eq6QUWdEYTuuOPdwY9NlUjDaP5A0ekm5wDeCHjp/1OQ==",
+  "dgSpecHash": "ZM1VPPxqPEY=",
   "success": true,
   "projectFilePath": "/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Infra/CycleTracker.Infra.csproj",
   "expectedPackageFiles": [

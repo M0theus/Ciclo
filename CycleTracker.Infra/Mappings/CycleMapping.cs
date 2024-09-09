@@ -37,6 +37,7 @@ public class CycleMapping : IEntityTypeConfiguration<Cycle>
         builder
             .HasOne(c => c.User)
             .WithOne(c => c.Ciclo)
+            .HasForeignKey<Cycle>(c => c.UsuarioId)
             .OnDelete(DeleteBehavior.Restrict);
     }
 }
