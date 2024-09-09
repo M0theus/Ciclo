@@ -1,0 +1,17 @@
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/bin/Debug/net6.0/CycleTracker.Application.deps.json
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/bin/Debug/net6.0/CycleTracker.Application.runtimeconfig.json
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/bin/Debug/net6.0/CycleTracker.Application.dll
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/bin/Debug/net6.0/ref/CycleTracker.Application.dll
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/bin/Debug/net6.0/CycleTracker.Application.pdb
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/bin/Debug/net6.0/CycleTracker.Domain.dll
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/bin/Debug/net6.0/CycleTracker.Domain.pdb
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/obj/Debug/net6.0/CycleTracker.Application.csproj.AssemblyReference.cache
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/obj/Debug/net6.0/CycleTracker.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/obj/Debug/net6.0/CycleTracker.Application.AssemblyInfoInputs.cache
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/obj/Debug/net6.0/CycleTracker.Application.AssemblyInfo.cs
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/obj/Debug/net6.0/CycleTracker.Application.csproj.CoreCompileInputs.cache
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/obj/Debug/net6.0/CycleTracker.Application.csproj.CopyComplete
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/obj/Debug/net6.0/CycleTracker.Application.dll
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/obj/Debug/net6.0/ref/CycleTracker.Application.dll
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/obj/Debug/net6.0/CycleTracker.Application.pdb
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Application/obj/Debug/net6.0/CycleTracker.Application.genruntimeconfig.cache

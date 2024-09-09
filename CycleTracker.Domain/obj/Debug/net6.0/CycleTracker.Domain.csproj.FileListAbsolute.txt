@@ -1,0 +1,14 @@
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Domain/bin/Debug/net6.0/CycleTracker.Domain.deps.json
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Domain/bin/Debug/net6.0/CycleTracker.Domain.runtimeconfig.json
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Domain/bin/Debug/net6.0/CycleTracker.Domain.dll
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Domain/bin/Debug/net6.0/ref/CycleTracker.Domain.dll
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Domain/bin/Debug/net6.0/CycleTracker.Domain.pdb
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Domain/obj/Debug/net6.0/CycleTracker.Domain.csproj.AssemblyReference.cache
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Domain/obj/Debug/net6.0/CycleTracker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Domain/obj/Debug/net6.0/CycleTracker.Domain.AssemblyInfoInputs.cache
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Domain/obj/Debug/net6.0/CycleTracker.Domain.AssemblyInfo.cs
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Domain/obj/Debug/net6.0/CycleTracker.Domain.csproj.CoreCompileInputs.cache
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Domain/obj/Debug/net6.0/CycleTracker.Domain.dll
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Domain/obj/Debug/net6.0/ref/CycleTracker.Domain.dll
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Domain/obj/Debug/net6.0/CycleTracker.Domain.pdb
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.Domain/obj/Debug/net6.0/CycleTracker.Domain.genruntimeconfig.cache

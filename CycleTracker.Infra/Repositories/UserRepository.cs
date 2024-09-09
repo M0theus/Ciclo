@@ -1,15 +1,17 @@
+using System.Linq.Expressions;
 using CycleTracker.Domain.Contracts.Repositories;
 using CycleTracker.Domain.Entity;
+using CycleTracker.Infra.Abstractions;
 using CycleTracker.Infra.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace CycleTracker.Infra.Repositories;
 
-public class UserRepository : IUserRepository
+public class UserRepository : Repository<User>, IUserRepository
 {
     protected readonly ApplicationDbContext Context;
 
-    public UserRepository(ApplicationDbContext context)
+    protected UserRepository(ApplicationDbContext context) : base(context)
     {
         Context = context;
     }
@@ -23,16 +25,16 @@ public class UserRepository : IUserRepository
 
     public  void Adicionar(User user)
     {
-        throw new NotImplementedException();
+        Context.Users.Add(user);
     }
 
     public void Alterar(User user)
     {
-        throw new NotImplementedException();
+        Context.Users.Update(user);
     }
 
-    public void Excluir(int userId)
+    public void Excluir(User user)
     {
-        throw new NotImplementedException();
+        Context.Users.Remove(user);
     }
 }

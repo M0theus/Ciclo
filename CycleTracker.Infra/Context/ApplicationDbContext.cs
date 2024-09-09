@@ -1,11 +1,12 @@
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
+using CycleTracker.Domain.Contracts;
 using CycleTracker.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
 
 namespace CycleTracker.Infra.Context;
 
-public class ApplicationDbContext : DbContext
+public class ApplicationDbContext : DbContext, IUnitOfWork
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     { }
@@ -28,4 +29,6 @@ public class ApplicationDbContext : DbContext
     {
         modelBuilder.Ignore<ValidationResult>();
     }
+
+    public async Task<bool> Commit() => await SaveChangesAsync() > 0;
 }
