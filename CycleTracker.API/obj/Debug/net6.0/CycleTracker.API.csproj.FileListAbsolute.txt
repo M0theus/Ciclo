@@ -47,3 +47,10 @@
 /home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.API/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.API/bin/Debug/net6.0/CycleTracker.Infra.dll
 /home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.API/bin/Debug/net6.0/CycleTracker.Infra.pdb
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.API/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.API/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.API/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.API/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.API/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.API/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/home/matheus/dev/CycleTracker/CycleTracker-api/CycleTracker.API/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll

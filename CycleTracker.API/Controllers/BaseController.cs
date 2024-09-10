@@ -7,9 +7,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace CycleTracker.API.Controllers;
 
-[Authorize]
-[ApiController]
-[Route("[controller]")]
 public abstract class BaseController : ControllerBase
 {
     private readonly INotificator _notificator;

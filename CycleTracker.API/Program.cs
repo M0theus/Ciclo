@@ -1,3 +1,4 @@
+using System.Text;
 using AutoMapper;
 using CycleTracker.Application.Contracts.Services;
 using CycleTracker.Application.Dto.V1.User;
@@ -7,8 +8,10 @@ using CycleTracker.Domain.Contracts.Repositories;
 using CycleTracker.Domain.Entity;
 using CycleTracker.Infra.Context;
 using CycleTracker.Infra.Repositories;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,10 +21,19 @@ var builder = WebApplication.CreateBuilder(args);
 // Add Dto AutoMapper
 var autoMapperConfig = new MapperConfiguration(cfg =>
 {
-    cfg.CreateMap<User, UsuarioDto>().ReverseMap();
-    cfg.CreateMap<User, CadastrarUsuarioDto>().ReverseMap();
-    cfg.CreateMap<CadastrarUsuarioDto, UsuarioDto>().ReverseMap();
-    cfg.CreateMap<UsuarioDto, AlterarUsuarioDto>().ReverseMap();
+    var autoMapperConfig = new MapperConfiguration(cfg =>
+    {
+        cfg.CreateMap<User, UsuarioDto>();
+        cfg.CreateMap<UsuarioDto, User>();
+
+        cfg.CreateMap<User, CadastrarUsuarioDto>();
+        cfg.CreateMap<CadastrarUsuarioDto, User>()
+            .ForMember(dest => dest.Ciclo, opt => opt.Ignore());
+
+        cfg.CreateMap<UsuarioDto, AlterarUsuarioDto>();
+        cfg.CreateMap<AlterarUsuarioDto, UsuarioDto>();
+    });
+
 });
 
 builder.Services.AddSingleton(autoMapperConfig.CreateMapper());
@@ -57,6 +69,31 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 #endregion
 
+/*#region Jwt
+
+var key = Encoding.ASCII.GetBytes(Settings.Secret);
+builder.Services
+    .AddAuthentication(x =>
+    {
+        x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+        x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    }) 
+    .AddJwtBearer(x =>
+    {
+        x.RequireHttpsMetadata = false;
+        
+        x.SaveToken = true;
+        x.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(key),
+            ValidateIssuer = false,
+            ValidateAudience = false
+        };
+    });
+
+#endregion
+*/
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

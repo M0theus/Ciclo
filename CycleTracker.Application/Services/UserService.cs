@@ -32,14 +32,14 @@ public class UserService : BaseService, IUserService
             return null;
         }
 
-       
-
         var senha = Guid.NewGuid().ToString();
         usuario.Senha = _passwordHasher.HashPassword(usuario, senha);
         _userRepository.Adicionar(usuario);
+
         if (await _userRepository.UnitOfWork.Commit())
         {
-            return Mapper.Map<User>(usuario);
+            // Não precisa mapear novamente, retorne o usuário diretamente
+            return usuario;
         }
 
         Notificator.Handle("Não foi possível salvar usuário.");
